@@ -79,11 +79,11 @@ textarea.respuesta{width:100%;border:1.5px solid var(--borde);border-radius:14px
 .div-txt{font-size:12px;color:var(--gris2)}
 .info-btn{width:100%;padding:14px;border:1px solid var(--borde);border-radius:14px;background:transparent;font-size:15px;color:var(--gris2);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
 /* Turno */
-.turno-hd{background:var(--verde-dk);padding:20px 18px 28px}
-.turno-lbl{font-size:12px;color:#9FE1CB;margin-bottom:6px}
-.turno-num{font-size:72px;font-weight:800;color:#fff;line-height:1;letter-spacing:-3px}
-.turno-tipo{display:inline-block;background:#1D9E75;border-radius:20px;padding:5px 14px;font-size:13px;color:#fff;margin-top:10px;font-weight:600}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0 12px}
+.turno-hd{background:var(--verde-dk);padding:18px 18px 20px;text-align:center}
+.turno-lbl{font-size:12px;color:#9FE1CB;margin-bottom:4px;text-align:center}
+.turno-num{font-size:80px;font-weight:800;color:#fff;line-height:1;letter-spacing:-3px;text-align:center}
+.turno-tipo{display:block;background:#1D9E75;border-radius:20px;padding:5px 14px;font-size:13px;color:#fff;margin-top:8px;font-weight:600;width:fit-content;margin-left:auto;margin-right:auto}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 10px}
 .stat{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:14px 8px;text-align:center}
 .stat-val{font-size:30px;font-weight:800;color:var(--negro)}
 .stat-rango{font-size:22px;font-weight:700;color:var(--verde-dk)}
@@ -92,9 +92,9 @@ textarea.respuesta{width:100%;border:1.5px solid var(--borde);border-radius:14px
 .prog-track{background:var(--gris3);border-radius:6px;height:8px;overflow:hidden;margin-bottom:6px;border:1px solid var(--borde)}
 .prog-fill{background:var(--verde);height:8px;border-radius:6px}
 .prog-lbls{display:flex;justify-content:space-between;font-size:12px;color:var(--gris2);margin-bottom:16px}
-.pre-card{background:var(--amber-lt);border:1.5px solid var(--amber);border-radius:16px;padding:18px;margin-bottom:12px}
+.pre-card{background:var(--amber-lt);border:1.5px solid var(--amber);border-radius:16px;padding:14px;margin-bottom:10px}
 .pre-title{font-size:15px;font-weight:700;color:var(--amber-dk);margin-bottom:6px;display:flex;align-items:center;gap:8px}
-.pre-sub{font-size:14px;color:var(--amber-dk);line-height:1.5;opacity:.85}
+.pre-sub{font-size:13px;color:var(--amber-dk);line-height:1.4;opacity:.85}
 .pre-btn{width:100%;background:var(--verde-dk);color:#fff;border:none;border-radius:12px;padding:13px;font-size:15px;font-weight:700;margin-top:14px;cursor:pointer}
 /* Aviso */
 .aviso-card{background:var(--verde-lt);border:2px solid #6EE7B7;border-radius:18px;padding:24px 18px;text-align:center;margin-bottom:14px}
@@ -219,7 +219,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
       <div class="card-item"><span class="ico">✓</span><span class="txt verde">El cliente escanea el QR al llegar y elige su tipo de atención</span></div>
       <div class="card-item"><span class="ico">✓</span><span class="txt verde">Mientras espera en la fila, envía receta y obra social desde su celular</span></div>
       <div class="card-item"><span class="ico">✓</span><span class="txt verde">El empleado ya tiene todo listo cuando el cliente llega al mostrador</span></div>
-      <div class="card-item"><span class="ico">✓</span><span class="txt verde">La compra de góndola va a una fila más rápida — sin esperar 8 minutos</span></div>
+      <div class="card-item"><span class="ico">✓</span><span class="txt verde">Si la medicación es de venta libre, el sistema lo detecta y le indica que vaya a la góndola — sin hacer fila</span></div>
     </div>
   </div>
   <div class="ft"><button class="btn-sig" onclick="ir('s3b')">¿Cuánto vale para tu farmacia? →</button><button class="btn-vol" onclick="ir('s2')">Volver</button></div>
