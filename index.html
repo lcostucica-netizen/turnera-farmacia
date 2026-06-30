@@ -378,46 +378,46 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
     <span style="width:8px;height:8px;border-radius:50%;background:#6EE7B7;display:inline-block;animation:pulse 1.5s infinite"></span>
     <span style="font-size:13px;color:#9FE1CB">Sistema activo · 1 cliente cada ~3 min</span>
   </div>
-  <div class="bd">
-    <div class="stats">
-      <div class="stat"><div class="stat-val">4</div><div class="stat-lbl">adelante</div></div>
-      <div class="stat"><div class="stat-rango">6–8'</div><div class="stat-lbl">estimado</div><div class="stat-nota">se actualiza</div></div>
+  <div class="bd" style="padding:10px 14px 6px">
+    <!-- Stats + progreso compactos -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+      <div class="stat" style="padding:8px"><div class="stat-val" style="font-size:24px">4</div><div class="stat-lbl">adelante</div></div>
+      <div class="stat" style="padding:8px"><div class="stat-rango" style="font-size:18px">6–8'</div><div class="stat-lbl">estimado</div></div>
     </div>
-    <div class="prog-track"><div class="prog-fill" style="width:60%"></div></div>
-    <div class="prog-lbls" style="margin-bottom:10px"><span>Turno 10</span><span>Tu turno: 14</span></div>
-    <!-- Historial de turnos -->
-    <div style="background:#fff;border:1px solid var(--borde);border-radius:14px;padding:14px;margin-bottom:10px">
-      <div style="font-size:11px;font-weight:700;color:var(--gris2);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">Últimos turnos atendidos</div>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <div style="display:flex;align-items:center;justify-content:space-between">
-          <div style="display:flex;align-items:center;gap:8px">
-            <span style="width:28px;height:28px;border-radius:8px;background:var(--verde-lt);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--verde-dk)">13</span>
-            <span style="font-size:13px;color:var(--gris1)">Particular</span>
-          </div>
-          <span style="font-size:12px;color:var(--verde);font-weight:600">hace 2 min ✓</span>
+    <div class="prog-track" style="margin-bottom:4px"><div class="prog-fill" style="width:60%"></div></div>
+    <div class="prog-lbls" style="margin-bottom:8px;font-size:11px"><span>Turno 10</span><span>Tu turno: 14</span></div>
+    <!-- Historial compacto -->
+    <div style="background:#fff;border:1px solid var(--borde);border-radius:12px;padding:10px 12px;margin-bottom:8px">
+      <div style="font-size:10px;font-weight:700;color:var(--gris2);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">Últimos turnos atendidos</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <div style="display:flex;align-items:center;gap:6px">
+          <span style="width:24px;height:24px;border-radius:6px;background:var(--verde-lt);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--verde-dk)">13</span>
+          <span style="font-size:12px;color:var(--gris1)">Particular</span>
         </div>
-        <div style="height:1px;background:var(--borde)"></div>
-        <div style="display:flex;align-items:center;justify-content:space-between">
-          <div style="display:flex;align-items:center;gap:8px">
-            <span style="width:28px;height:28px;border-radius:8px;background:var(--verde-lt);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--verde-dk)">12</span>
-            <span style="font-size:13px;color:var(--gris1)">Obra Social</span>
-          </div>
-          <span style="font-size:12px;color:var(--gris2)">hace 5 min ✓</span>
+        <span style="font-size:11px;color:var(--verde);font-weight:600">hace 2 min ✓</span>
+      </div>
+      <div style="height:1px;background:var(--borde);margin-bottom:6px"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <div style="display:flex;align-items:center;gap:6px">
+          <span style="width:24px;height:24px;border-radius:6px;background:var(--verde-lt);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--verde-dk)">12</span>
+          <span style="font-size:12px;color:var(--gris1)">Obra Social</span>
         </div>
-        <div style="height:1px;background:var(--borde)"></div>
-        <div style="display:flex;align-items:center;justify-content:space-between">
-          <div style="display:flex;align-items:center;gap:8px">
-            <span style="width:28px;height:28px;border-radius:8px;background:var(--verde-lt);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--verde-dk)">11</span>
-            <span style="font-size:13px;color:var(--gris1)">Retiro express</span>
-          </div>
-          <span style="font-size:12px;color:var(--gris2)">hace 8 min ✓</span>
+        <span style="font-size:11px;color:var(--gris2)">hace 5 min ✓</span>
+      </div>
+      <div style="height:1px;background:var(--borde);margin-bottom:6px"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div style="display:flex;align-items:center;gap:6px">
+          <span style="width:24px;height:24px;border-radius:6px;background:var(--verde-lt);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--verde-dk)">11</span>
+          <span style="font-size:12px;color:var(--gris1)">Retiro express</span>
         </div>
+        <span style="font-size:11px;color:var(--gris2)">hace 8 min ✓</span>
       </div>
     </div>
-    <div class="pre-card">
-      <div class="pre-title"><span style="font-size:16px">⚡</span> Adelantá el trámite</div>
-      <div class="pre-sub">Enviá tu receta y obra social. Podés irte y volver — te avisamos cuando sea tu turno.</div>
-      <button class="pre-btn">Enviar receta ahora</button>
+    <!-- Pre-atención compacto -->
+    <div style="background:var(--amber-lt);border:1.5px solid var(--amber);border-radius:12px;padding:10px 12px">
+      <div style="font-size:13px;font-weight:700;color:var(--amber-dk);margin-bottom:4px;display:flex;align-items:center;gap:6px"><span>⚡</span> Adelantá el trámite</div>
+      <div style="font-size:12px;color:var(--amber-dk);opacity:.85;margin-bottom:8px">Podés irte y volver — te avisamos cuando sea tu turno.</div>
+      <button class="pre-btn" style="padding:10px;font-size:14px">Enviar receta ahora</button>
     </div>
   </div>
   <div class="ft"><button class="btn-sig" onclick="ir('s6')">Le llega el aviso →</button><button class="btn-vol" onclick="ir('s4b')">Volver</button></div>
