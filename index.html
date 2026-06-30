@@ -211,8 +211,8 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
   <div class="bd">
     <div class="titulo">Con Turnera.</div>
     <div class="highlight-box2">
-      <div class="highlight-num2">+5'</div>
-      <div class="highlight-lbl2">de atención recuperados por cliente cuando el trámite se adelanta</div>
+      <div class="highlight-num2">-5'</div>
+      <div class="highlight-lbl2">de atención por cliente cuando el trámite se adelanta — menos tiempo, más clientes</div>
     </div>
     <div class="card solucion">
       <div class="card-tag verde">La solución</div>
@@ -230,50 +230,44 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 <div class="screen" id="s3b">
   <div class="hd"><div class="hd-logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div><div class="hd-titulo">Turnera</div><div class="hd-sub" id="local-3b">Farmacia</div></div><div class="hd-paso">3 de 6</div></div>
   <div class="bd">
-    <div class="titulo">¿Cuánto vale para tu farmacia?</div>
-    <div class="subtitulo" style="margin-bottom:20px">Ingresá tu ticket promedio y calculamos el impacto real.</div>
+    <div class="titulo" style="margin-bottom:8px">¿Cuánto vale?</div>
 
-    <div style="background:#fff;border:1px solid var(--borde);border-radius:16px;padding:18px;margin-bottom:14px">
-      <div style="font-size:13px;font-weight:700;color:var(--gris2);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px">Tu farmacia</div>
-
-      <div style="margin-bottom:18px">
-        <div style="font-size:14px;font-weight:600;color:var(--gris1);margin-bottom:8px">Recetas por día</div>
-        <div style="display:flex;align-items:center;gap:12px">
-          <input type="range" id="sl-recetas" min="100" max="500" value="300" step="10" style="flex:1" oninput="calcular()">
-          <span style="font-size:20px;font-weight:700;color:var(--negro);min-width:48px;text-align:right" id="out-recetas">300</span>
+    <div style="background:var(--verde-dk);border-radius:16px;padding:16px;margin-bottom:12px">
+      <div style="font-size:11px;color:#9FE1CB;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;font-weight:700">Ingreso adicional estimado por día</div>
+      <div style="font-size:44px;font-weight:800;color:#6EE7B7;text-align:center;margin-bottom:4px" id="out-dinero">$8.580.000</div>
+      <div style="font-size:11px;color:#9FE1CB;text-align:center;margin-bottom:12px">con el mismo personal</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:10px;text-align:center">
+          <div style="font-size:24px;font-weight:800;color:#fff" id="out-minutos">1500</div>
+          <div style="font-size:10px;color:#9FE1CB;margin-top:2px">min liberados/día</div>
         </div>
-      </div>
-
-      <div style="margin-bottom:4px">
-        <div style="font-size:14px;font-weight:600;color:var(--gris1);margin-bottom:8px">Ticket promedio por receta</div>
-        <div style="display:flex;align-items:center;gap:12px">
-          <input type="range" id="sl-ticket" min="5000" max="50000" value="20000" step="1000" style="flex:1" oninput="calcular()">
-          <span style="font-size:18px;font-weight:700;color:var(--negro);min-width:72px;text-align:right" id="out-ticket">$20.000</span>
+        <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:10px;text-align:center">
+          <div style="font-size:24px;font-weight:800;color:#fff" id="out-clientes">429</div>
+          <div style="font-size:10px;color:#9FE1CB;margin-top:2px">clientes adicionales</div>
         </div>
       </div>
     </div>
 
-    <div style="background:var(--verde-dk);border-radius:16px;padding:18px;margin-bottom:12px">
-      <div style="font-size:12px;color:#9FE1CB;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;font-weight:700">Impacto estimado por día</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
-        <div style="background:rgba(255,255,255,.1);border-radius:12px;padding:14px;text-align:center">
-          <div style="font-size:28px;font-weight:800;color:#fff" id="out-minutos">1500</div>
-          <div style="font-size:11px;color:#9FE1CB;margin-top:4px">minutos liberados</div>
+    <div style="background:#fff;border:1px solid var(--borde);border-radius:14px;padding:16px;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:700;color:var(--gris2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px">Ajustá con tus números</div>
+      <div style="margin-bottom:14px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <div style="font-size:14px;font-weight:600;color:var(--gris1)">Recetas por día</div>
+          <span style="font-size:18px;font-weight:700;color:var(--negro)" id="out-recetas">300</span>
         </div>
-        <div style="background:rgba(255,255,255,.1);border-radius:12px;padding:14px;text-align:center">
-          <div style="font-size:28px;font-weight:800;color:#fff" id="out-clientes">429</div>
-          <div style="font-size:11px;color:#9FE1CB;margin-top:4px">clientes adicionales</div>
-        </div>
+        <input type="range" id="sl-recetas" min="100" max="500" value="300" step="10" style="width:100%" oninput="calcular()">
       </div>
-      <div style="background:rgba(255,255,255,.15);border-radius:12px;padding:16px;text-align:center">
-        <div style="font-size:11px;color:#9FE1CB;margin-bottom:6px">Ingreso adicional estimado</div>
-        <div style="font-size:36px;font-weight:800;color:#6EE7B7" id="out-dinero">$8.580.000</div>
-        <div style="font-size:11px;color:#9FE1CB;margin-top:4px">por día · con el mismo personal</div>
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <div style="font-size:14px;font-weight:600;color:var(--gris1)">Ticket promedio</div>
+          <span style="font-size:16px;font-weight:700;color:var(--negro)" id="out-ticket">$20.000</span>
+        </div>
+        <input type="range" id="sl-ticket" min="5000" max="50000" value="20000" step="1000" style="width:100%" oninput="calcular()">
       </div>
     </div>
 
-    <div style="background:var(--verde-lt);border:1px solid #a7f3d0;border-radius:12px;padding:14px;font-size:13px;color:var(--verde-dk);line-height:1.5">
-      Basado en 5 minutos recuperados por receta cuando el cliente adelanta el trámite mientras espera.
+    <div style="background:var(--verde-lt);border:1px solid #a7f3d0;border-radius:12px;padding:12px;font-size:12px;color:var(--verde-dk);line-height:1.5">
+      Basado en 5 min recuperados por receta cuando el trámite se adelanta.
     </div>
   </div>
   <div class="ft"><button class="btn-sig" onclick="ir('s4')">Ver cómo funciona →</button><button class="btn-vol" onclick="ir('s3')">Volver</button></div>
@@ -284,20 +278,44 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
   <div class="hd"><div class="hd-logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="hd-titulo">Turnera</div><div class="hd-sub" id="local-4">El cliente</div></div><div class="hd-paso">4 de 6</div></div>
   <div class="bd">
     <div class="subtitulo">El cliente escanea el QR y elige qué necesita.</div>
+
     <button class="opt-btn">
       <div class="opt-icon opt-green"><span style="font-size:26px">💊</span></div>
-      <div><div class="opt-title">Retirar medicación</div><div class="opt-sub">Particular, obra social o receta</div></div>
+      <div>
+        <div class="opt-title">Comprar medicación</div>
+        <div class="opt-sub">Con receta, obra social o particular · adelantá el trámite mientras esperás</div>
+      </div>
       <span class="opt-arrow">›</span>
     </button>
+
     <button class="opt-btn">
-      <div class="opt-icon opt-blue"><span style="font-size:26px">🛒</span></div>
-      <div><div class="opt-title">Comprar en la farmacia</div><div class="opt-sub">Góndola, perfumería, vitaminas — no hagas fila, pagá en caja</div></div>
+      <div class="opt-icon opt-blue"><span style="font-size:26px">📦</span></div>
+      <div>
+        <div class="opt-title">Retirar compra</div>
+        <div class="opt-sub">Ya pagaste · solo venís a buscar · fila express</div>
+      </div>
       <span class="opt-arrow">›</span>
     </button>
-    <div class="div-sep"><div class="div-line"></div><span class="div-txt">también podés</span><div class="div-line"></div></div>
-    <button class="info-btn"><span style="font-size:16px">🔍</span> Consultar si hay stock antes de hacer fila</button>
+
+    <button class="opt-btn">
+      <div class="opt-icon" style="background:#F3F0FF"><span style="font-size:26px">🔍</span></div>
+      <div>
+        <div class="opt-title">Consultar stock</div>
+        <div class="opt-sub">Antes de hacer fila · si está en góndola te avisamos</div>
+      </div>
+      <span class="opt-arrow">›</span>
+    </button>
+
+    <button class="opt-btn" style="border-color:#9FE1CB;background:#E8F7F2">
+      <div class="opt-icon" style="background:#fff"><span style="font-size:26px">🤰</span></div>
+      <div>
+        <div class="opt-title" style="color:#085041">Turno prioritario</div>
+        <div class="opt-sub">Embarazada · discapacidad · adulto mayor</div>
+      </div>
+      <span class="opt-arrow" style="color:#085041">›</span>
+    </button>
   </div>
-  <div class="ft"><button class="btn-sig" onclick="ir('s4b')">Ver si hay stock →</button><button class="btn-vol" onclick="ir('s3b')">Volver</button></div>
+  <div class="ft"><button class="btn-sig" onclick="ir('s4b')">Elige comprar medicación →</button><button class="btn-vol" onclick="ir('s3b')">Volver</button></div>
 </div>
 
 
@@ -305,14 +323,19 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 <div class="screen" id="s4b">
   <div class="hd"><div class="hd-logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><div><div class="hd-titulo">Turnera</div><div class="hd-sub" id="local-4b">Consulta de stock</div></div><div class="hd-paso">5 de 7</div></div>
   <div class="bd">
-    <div class="subtitulo">El cliente consulta el stock antes de hacer fila. Si no hay, se ahorra el viaje.</div>
+    <div class="subtitulo">Antes de hacer fila, el cliente sabe si su medicación está disponible. Si no hay, <strong>no viene.</strong></div>
 
-    <div style="background:#fff;border:1px solid var(--borde);border-radius:12px;padding:14px 16px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between">
-      <div>
-        <div style="font-size:15px;font-weight:700;color:var(--negro)">Losartán 50mg × 30</div>
-        <div style="font-size:12px;color:var(--gris2);margin-top:2px">Laboratorio Roemmers</div>
+    <div style="background:var(--verde-lt);border:1.5px solid #a7f3d0;border-radius:12px;padding:14px 16px;margin-bottom:10px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div>
+          <div style="font-size:15px;font-weight:700;color:var(--negro)">Losartán 50mg × 30</div>
+          <div style="font-size:12px;color:var(--gris2);margin-top:2px">Laboratorio Roemmers</div>
+        </div>
+        <span style="background:#085041;color:#fff;border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700">✓ En góndola</span>
       </div>
-      <span style="background:var(--verde-lt);color:var(--verde-dk);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700">✓ Disponible</span>
+      <div style="background:#fff;border-radius:10px;padding:10px;font-size:13px;color:#085041;line-height:1.5">
+        🛒 <strong>No hagas fila.</strong> Está en la góndola — tomalo y pagá directo en caja.
+      </div>
     </div>
 
     <div style="background:var(--rojo-lt);border:1.5px solid #fecaca;border-radius:14px;padding:16px;margin-bottom:10px">
@@ -324,8 +347,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
         <span style="background:#fecaca;color:#7f1d1d;border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700">✗ Sin stock</span>
       </div>
       <div style="background:#fff;border-radius:10px;padding:12px;font-size:13px;color:#7f1d1d;line-height:1.5">
-        ⚠️ <strong>No viene a hacer fila.</strong><br>
-        El sistema le avisa automáticamente cuando llegue el stock.
+        🚫 <strong>No pierde el tiempo haciendo fila para escuchar "no hay".</strong><br>El sistema le avisa cuando llegue el stock.
       </div>
     </div>
 
