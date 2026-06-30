@@ -222,7 +222,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
       <div class="card-item"><span class="ico">✓</span><span class="txt verde">Si la medicación es de venta libre, el sistema lo detecta y le indica que vaya a la góndola — sin hacer fila</span></div>
     </div>
   </div>
-  <div class="ft"><button class="btn-sig" onclick="ir('s3b')">¿Cuánto vale para tu farmacia? →</button><button class="btn-vol" onclick="ir('s2')">Volver</button></div>
+  <div class="ft"><button class="btn-sig" onclick="ir('s3b')">Simulemos el impacto en tu farmacia →</button><button class="btn-vol" onclick="ir('s2')">Volver</button></div>
 </div>
 
 
@@ -230,10 +230,11 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 <div class="screen" id="s3b">
   <div class="hd"><div class="hd-logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div><div class="hd-titulo">Turnera</div><div class="hd-sub" id="local-3b">Farmacia</div></div><div class="hd-paso">3 de 6</div></div>
   <div class="bd">
-    <div class="titulo" style="margin-bottom:8px">¿Cuánto vale?</div>
+    <div class="titulo" style="margin-bottom:8px">Simulación para conversar</div>
+    <div class="subtitulo" style="margin-bottom:10px">No es una proyección — es un ejemplo para pensar juntos el impacto posible.</div>
 
     <div style="background:var(--verde-dk);border-radius:16px;padding:16px;margin-bottom:12px">
-      <div style="font-size:11px;color:#9FE1CB;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;font-weight:700">Ingreso adicional estimado por día</div>
+      <div style="font-size:11px;color:#9FE1CB;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;font-weight:700">Ejemplo de impacto potencial por día</div>
       <div style="font-size:44px;font-weight:800;color:#6EE7B7;text-align:center;margin-bottom:4px" id="out-dinero">$8.580.000</div>
       <div style="font-size:11px;color:#9FE1CB;text-align:center;margin-bottom:4px">con el mismo personal</div>
       <div style="font-size:11px;color:#FAEEDA;text-align:center;margin-bottom:12px;opacity:.9">⚠️ Estimación preliminar — la magnitud real se confirma en el piloto</div>
@@ -315,6 +316,11 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
       </div>
       <span class="opt-arrow" style="color:#085041">›</span>
     </button>
+
+    <div style="background:var(--gris3);border-radius:14px;padding:14px 16px;margin-top:6px">
+      <div style="font-size:14px;font-weight:700;color:var(--negro);margin-bottom:4px">💬 Una pregunta para vos</div>
+      <div style="font-size:14px;color:var(--gris1);line-height:1.45">Si mañana solo pudiéramos desarrollar UNA de estas cuatro, ¿cuál elegirías para tu farmacia?</div>
+    </div>
   </div>
   <div class="ft"><button class="btn-sig" onclick="ir('s4b')">Elige comprar medicación →</button><button class="btn-vol" onclick="ir('s3b')">Volver</button></div>
 </div>
@@ -324,7 +330,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 <div class="screen" id="s4b">
   <div class="hd"><div class="hd-logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><div><div class="hd-titulo">Turnera</div><div class="hd-sub" id="local-4b">Consulta de stock</div></div><div class="hd-paso">5 de 7</div></div>
   <div class="bd">
-    <div class="subtitulo">Antes de hacer fila, el cliente sabe si su medicación está disponible. Si no hay, <strong>no viene.</strong></div>
+    <div class="subtitulo">Antes de hacer fila, el cliente sabe si su medicación está disponible — y <strong>evita viajes innecesarios</strong> cuando no hay stock.</div>
 
     <div style="background:var(--verde-lt);border:1.5px solid #a7f3d0;border-radius:12px;padding:14px 16px;margin-bottom:10px">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
